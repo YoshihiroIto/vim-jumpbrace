@@ -30,7 +30,7 @@ let g:loaded_jump_brace = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! JumpBrace call jump_brace#jump_brace()
+noremap <silent> <Plug>(jumpbrace) :<C-u>call jump_brace#jump_brace()<CR>
 
 let &cpo = s:save_cpo
 unlet! s:save_cpo
